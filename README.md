@@ -1,92 +1,99 @@
-# digitech2324
+# <b> Digitale Techniken - With Python
+Johanna Kerch (since WiSe 2021/22), 
+Göran Liebs (since WiSe 2023/24)
+    
+<b> This workshop takes place from 9.-13. october from 9.00h until 15.00h in MN 13 und MN 13b.<br>
+    
+## <b> Welcome to the project
+This course likes to introduce modern programming technics to every one, with learning by doing.<br>
+This course is a development project on the cloud-based service for software development and version control from the Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (gitlab, GWDG).<br>
+Those git-projects might be cloned and forked by other users, to improve or to use them for new projects, respectivaly.
+There are many more of such platforms in the world wide web, working similarly.<br>
+Like for every git-repositories in such platforms, this text your are reading is automaticaly displayed from the file README.md and should explain well the project.<br>
+```Git``` is a version control programm that tracks changes in any folder (directory) with an hidden folder. <br>
+The course uses Jupyter Notebooks, an open source web application that can be used to create and share documents that contain live code, equations, visualizations, and text. The code cells are executable with costumized kernels for several programming languages.<br>
+
+## <b> Settings
+- A real computer with internet connection and a browser<br>
+- An user account at gitlab https://gitlab.gwdg.de/ to access, store and manages programming projects<br>
+https://docs.gwdg.de/doku.php?id=en:services:email_collaboration:gitlab:start <br>
+- An user account at https://jupyter-cloud.gwdg.de, a virtual computer with jupyterlab, used via your local browser<br>
+- Or Anaconda installed on a real computer that, runs a jupyter lab that you use with your browser.
+
+## <b> Prerequisites
+
+- How to use a web-browser<br>
+- Basic listening/reading comprehension in English<br>
+- The lectures (B.Geo.211 Digitale Techniken)<br>
+
+## <b> Content
+
+- Forking/Cloning a Git-Repository
+- Jupyter Notebook
+- Some shell commands in Bash and Git, change and track
+- Python
+    - basics: data types, strings, lists, dictionaries
+    - control flow and functions, list comprehension
+    - distribution/environment, package manager/pip
+    - read data from txt, numpy, pandas, missing data, data access via api (DIGIS/GEOROC example)
+    - visualise data, datetime
+    - data analysis: interpolation, regression, polynomial fit, filter
+    - object-oriented programming, class example
+    - IDE (PyCharm/Spyder), VScode, Vim, Emacs, etc. 
+    - code testing/unit tests
+    - and some phantastic real live applications
+
+# Installation, let's go...   
+
+<b> Please follow bold instructions: <br>
+
+### <b> Start your own developer jupyter-computer in the cloud
+<b> In your Web-browser go to https://jupyter-cloud.gwdg.de/ and click login.<br>
+<b> Use your gwdg account, choose the default jupyterlab.<br>
+
+That starts your developer-computer (jupyterlab) in the data center of the GWDG (cloud, many connected computers or servers, ...). <br>
+Changing your homecomputer or laptop to a programmers-computer can be hard and all your work might just run at your machine but not necessarily on others. <br>
+Or install Anaconda, and use the jupyterlab of this python distribution.
+<br>
+<b> When your jupyterlab is running, click: File -> New -> Terminal.<br>
+
+This is a bash shell, a commando based userinterface of your developermachine.<br>
+<br>
+    
+### <b> Forking gitlab-projects
+    
+As we like to integrate this course as a real-live-development-project, you have two possibilities:<br>
+    
+<b> First, Preferred: Log in to your gitlab account (if not done already), search this project with the search bar and by clicking the magnifying glass symbole. Than click the fork-symbole at the right of the star symbol. And follow the following pages. <br>
+You will see a massage that the project was forked. Now you own a project with the content of this course in your account.<br>
+Now if you like to run this project, you will copy a version including the hidden git-file (saves changes and origin) to your computer, that is what we call a clone.  
+
+Second: In a repository you may ask the owner for permissions. And then a generated access key is requiered, to work at this project with an owner-defined role (i.e. developer, distributer,...). Consult the file 'Securitykey2bDevOfProject.md' if you like to do so. This  allows you to suggest changes to the original repository directly.<br>
+    
+### <b> Copy the URL of the repository 
+<b> Now switch between profile view to the project view at your gitlab home page (account).
+<b> You should see this file and others...<br>
+<b> Now click the clone-button and click the little clipboard button (under cloning with ssh), to copy the URL (internetadress).<br>
+<br>
+<br>
+
+### <b> Cloning the repository
+<b> In the web-browser-tab with your jupyter-computer-terminal you run following command, with pasting the copied URL of your 
+repository fork.  <br>
+
+```git clone << past here copied URL from YOUR FORK! >> ```
+<br>
+
+A clone is not just a copy, there is still a connection between this git-repositories. Knowing each other, there can be exchanges of changes between them.
+E.g. a clone can update changes from his origin (```git pull```), or ask to upload (```git push```) his changes to the origin. 
+<br>
+If you have been successfull, you see a new folder (digitale-techniken-wise2324) in the filebrowser list at the left, in your GWDGjupytercloud-maschine, in your browse, on your sreen... 
+
+<br>
+<b>Now click on the folder (digitale-techniken-wise2324-pre). Then open the file Go_here_after_README_done.ipynb.
+
+A jupyter notebook with the extention .ipynb.
+<br>
 
 
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/digitech2023/digitech2324.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/digitech2023/digitech2324/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+  

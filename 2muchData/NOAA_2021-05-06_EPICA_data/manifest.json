@@ -1,0 +1,77 @@
+{
+  "files" : [ {
+    "path" : "data/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.txt",
+    "filesize" : "107462",
+    "MD5" : "bfb0ed577f5a0978114f6735ef4a3c1e"
+  }, {
+    "path" : "data/pub/data/paleo/icecore/antarctica/epica_domec/edc3deuttemp2007.txt",
+    "filesize" : "357457",
+    "MD5" : "0c9d2ea455439973d81b9b00644007e5"
+  }, {
+    "path" : "data/pub/data/paleo/icecore/antarctica/epica_domec/edc-dust2008.txt",
+    "filesize" : "292173",
+    "MD5" : "f763951485c082880b497169fa7bdc7b"
+  }, {
+    "path" : "data/pub/data/paleo/icecore/antarctica/epica_domec/edc-ch4-2008.txt",
+    "filesize" : "95296",
+    "MD5" : "5f37ab87e83507b42a0dc5b6fc6b872a"
+  } ],
+  "params" : {
+    "dataPublisher" : "NOAA",
+    "dataTypeId" : "7",
+    "xmlId" : "1265|1384|1388|1390"
+  },
+  "matches" : [ {
+    "download" : "Y",
+    "metadataFile" : "metadata/noaa-icecore-6091.json",
+    "studyName" : "EPICA Dome C - 800KYr CO2 Data",
+    "sites" : [ {
+      "siteName" : "EPICA Dome C",
+      "files" : [ {
+        "fileName" : "edc-co2-2008.txt",
+        "description" : "Data",
+        "URL" : "https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.txt"
+      } ]
+    } ]
+  }, {
+    "download" : "Y",
+    "metadataFile" : "metadata/noaa-icecore-6080.json",
+    "studyName" : "EPICA Dome C - 800KYr Deuterium Data and Temperature Estimates",
+    "sites" : [ {
+      "siteName" : "EPICA Dome C",
+      "files" : [ {
+        "fileName" : "edc3deuttemp2007.txt",
+        "description" : "Data",
+        "URL" : "https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc3deuttemp2007.txt"
+      } ]
+    } ]
+  }, {
+    "download" : "Y",
+    "metadataFile" : "metadata/noaa-icecore-6092.json",
+    "studyName" : "EPICA Dome C - 800KYr Dust Data",
+    "sites" : [ {
+      "siteName" : "EPICA Dome C",
+      "files" : [ {
+        "fileName" : "edc-dust2008.txt",
+        "description" : "Data",
+        "URL" : "https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-dust2008.txt"
+      } ]
+    } ]
+  }, {
+    "download" : "Y",
+    "metadataFile" : "metadata/noaa-icecore-6093.json",
+    "studyName" : "EPICA Dome C - 800KYr Methane Data",
+    "sites" : [ {
+      "siteName" : "EPICA Dome C",
+      "files" : [ {
+        "fileName" : "edc-ch4-2008.txt",
+        "description" : "Data",
+        "URL" : "https://www.ncei.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-ch4-2008.txt"
+      } ]
+    } ]
+  } ],
+  "info" : {
+    "downloadCreateDate" : "2021-05-06T13:03:51.130Z",
+    "details" : "See the included README.txt for details of the sections in this manifest."
+  }
+}
